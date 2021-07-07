@@ -124,6 +124,7 @@ h1 {
 }
 .welcome-text {
     color: magenta;
+    font-size: 1.25rem;
     line-height: 1.6;
     max-width: 66ch;
     padding: 0 2rem;
@@ -216,5 +217,8 @@ h2 {
     }
     .cameo {
         margin: 3rem;
+    }
+    .welcome-text {
+        font-size: 1.5rem;
     }
 }
