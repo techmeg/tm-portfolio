@@ -8,27 +8,36 @@
     --main-bg-color: #333;
     --main-color: mediumorchid;
     --accent-bg-color:  rgba(0, 255, 255, 0.666);
+    --accent-nav: rgb(0, 255,255);
     --accent-color: rgb(14, 18, 136);
 }
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background: var(--main-bg-color);
     color: var(--main-color);
 }
 img {
     display: block;
+    object-fit: cover;
+    width: 100%;
 }
 #navbar {
-    background: var(--accent-bg-color);
+    background: var(--accent-nav);
     color: var(--accent-color);
-    display: flex;
-    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
     z-index: 10;
+}
+.logo {
+    font-size: 2.8rem;
+    font-weight: 800;
+    font-style: italic;
+    margin-left: 1rem;
+    padding: 1rem 0 0;
+    width: 100%;
 }
 
 .nav-menu {
@@ -45,7 +54,8 @@ ul {
 .nav-item a {
     display: block;
     font-size: 1.3rem;
-    padding: 1.3rem;
+    font-weight: 700;
+    padding: 0 0 1.3rem 1.3rem;
     text-decoration: none;
 }
 
@@ -63,18 +73,35 @@ ul {
     background-color: var(--accent-color);
     color: var(--accent-bg-color);
 }
+.nav-item a:focus, .nav-item a:hover {
+    border-radius: 10px;
+}
+
+
+.image-label:hover, .image-label:focus {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
 #profile-link:hover, #profile-link:focus {
     background-color: var(--accent-bg-color);
     color: var(--accent-color); 
 }
 /****** navbar large screens *****/
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     #navbar {
-        justify-content: flex-end;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo {
+        padding-bottom: 1rem;
     }
     .nav-menu {
         margin-right: 1rem;
+    }
+    .nav-item a {
+        padding: 1.3rem;
     }
 }
 /********* avoid scrolling behind sticky header *****/
@@ -87,13 +114,13 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 70vh;
-    padding: 2.5rem;
+    padding: 6rem 2.75rem 2.75rem;
     text-align: center;
     width: 100%;
 }
 h1 {
-    font-size: 3rem;
-    padding-top: 2rem;
+    font-size: 2.5rem;
+    padding-top: 4rem;
 }
 .welcome-text {
     color: magenta;
@@ -109,22 +136,14 @@ h1 {
     height: auto;
 }
 
-/******** welcome large screens ******/
-@media (min-width: 768px) {
-    h1 {
-        font-size: 4rem;
-    }
-    .cameo {
-        margin: 3rem;
-    }
-}
+
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     text-align: center;
 }
 #projects, #contact {
-    padding: 3em;
+    padding: 3rem;
 }
 #projects {
     background: var(--accent-bg-color);
@@ -142,13 +161,14 @@ h2 {
     box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(14, 18, 136, 0.5);
-    max-width: 300px;
+    width: 300px;
     height: auto;
 }
 .project-tile img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: block;
+    height: 187.5px;
     object-fit: cover;
     width: 100%;
 
@@ -156,10 +176,12 @@ h2 {
 .profile-link {
     align-items: center;
     display: flex;
+    font-weight: 700;
     justify-content: center;
 }
 #profile-link {
     background-color: var(--accent-color);
+    border-radius: 10px;
     color: var(--accent-bg-color);
     padding: 1.5rem;
     text-align: center;
@@ -177,4 +199,22 @@ h2 {
     fill: var(--main-color);
     height: 50px;
     width: 50px;
+}
+
+.copyright {
+    font-size: .825rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+/******** welcome large screens ******/
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .cameo {
+        margin: 3rem;
+    }
 }
