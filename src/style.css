@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-bg-color: #333;
+    --main-color: mediumorchid;
+    --accent-bg-color:  rgba(0, 255, 255, 0.666);
+    --accent-color: rgb(14, 18, 136);
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: var(--main-bg-color);
+    color: var(--main-color);
+}
+img {
+    display: block;
+}
+#navbar {
+    background: var(--accent-bg-color);
+    color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 10;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-item {
+    display: list-item;
+}
+.nav-item a {
+    display: block;
+    font-size: 1.3rem;
+    padding: 1.3rem;
+    text-decoration: none;
+}
+
+.project-tile a {
+    background: inherit;
+    padding: 8rem 0 0;
+    text-decoration: none;
+}
+.image-label {
+    padding: .5rem 0;
+    text-align: center;
+}
+
+.nav-item a:focus, .nav-item a:hover, .image-label:hover, .image-label:focus {
+    background-color: var(--accent-color);
+    color: var(--accent-bg-color);
+}
+
+#profile-link:hover, #profile-link:focus {
+    background-color: var(--accent-bg-color);
+    color: var(--accent-color); 
+}
+/****** navbar large screens *****/
+@media (min-width: 768px) {
+    #navbar {
+        justify-content: flex-end;
+    }
+    .nav-menu {
+        margin-right: 1rem;
+    }
+}
+/********* avoid scrolling behind sticky header *****/
+section {
+    scroll-margin-top: 4.125rem;
+}
+#welcome-section {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 2.5rem;
+    text-align: center;
+    width: 100%;
+}
+h1 {
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+.welcome-text {
+    color: magenta;
+    line-height: 1.6;
+    max-width: 66ch;
+    padding: 0 2rem;
+}
+.cameo {
+    border-radius: 50%;
+    display: block;
+    max-width: 250px;
+    margin: 2rem;
+    height: auto;
+}
+
+/******** welcome large screens ******/
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+    .cameo {
+        margin: 3rem;
+    }
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+#projects, #contact {
+    padding: 3em;
+}
+#projects {
+    background: var(--accent-bg-color);
+    color: var(--accent-color);
+}
+.tiles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1.8rem;
+    margin-bottom: 2rem;
+}
+.project-tile {
+    background: var(--accent-bg-color);
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(14, 18, 136, 0.5);
+    max-width: 300px;
+    height: auto;
+}
+.project-tile img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+
+}
+.profile-link {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#profile-link {
+    background-color: var(--accent-color);
+    color: var(--accent-bg-color);
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+}
+
+.contact-icons {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+#contact svg {
+    fill: var(--main-color);
+    height: 50px;
+    width: 50px;
+}
