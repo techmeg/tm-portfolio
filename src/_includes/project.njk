@@ -1,0 +1,15 @@
+---
+layout: "base.njk"
+title: "title"
+---
+<article class="project-article">
+    <h1>{{ title}}</h1>
+    <figure class="project-feature">
+        <a class="project-site-link" href="{{ siteLink }}"><img src="{{ image }}" alt="{{ imageAlt }}"></a>
+        <figcaption class="caption"> {{ imageAlt }} </figcaption> 
+    </figure>
+    <div class="project-text">
+    {{ content | safe }}
+        <button class="project-code-link"><a href="{{ codeLink }}">Link to Code</a></button>
+    </div>
+</article>

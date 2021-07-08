@@ -2,7 +2,7 @@
 layout: "base.njk"
 
 ---
-<main>
+<div class="home">
     <section id="welcome-section">
         <h1>Hi. Meg here.</h1>
         <img class="cameo" src="images/meg-at-color-factory.png" alt="meg at Color Factory" />
@@ -12,33 +12,17 @@ layout: "base.njk"
     <section  id="projects">
         <h2>Here is a sampling of my work.</h2>
         <div class="tiles">
-            <div class="project-tile">
-                <a href="https://techmeg.github.io/kitty-corner/" target="_blank" ><img src="images/kitty-corner.jpg" alt="landing page of Kitty Corner site" /><p tabindex=0 class="image-label">Kitty Corner</p></a>
-            </div>
-            <div class="project-tile">
-                <a href="https://techmeg.github.io/fm-launch-countdown-timer/" target="_blank"><img src="images/countdown-timer.png" alt="countdown timer" /><p tabindex=0 class="image-label">Countdown Timer</p></a>
-            </div>
-            <div class="project-tile">
-                <a href="https://techmeg.github.io/unplugged/" target="_blank"><img src="images/unplugged.png" alt="landing page band site" /><p tabindex=0 class="image-label">Unplugged</p></a>
-            </div>
-            <div class="project-tile">
-                <a href="https://techmeg.github.io/to-do-app/" target="_blank"><img src="images/to-do-app.png" alt="to-do list app" /><p tabindex=0 class="image-label">To Do App</p></a>
-            </div>
-            <div class="project-tile">
-                <a href="https://techmeg.github.io/calculator-app/" target="_blank"><img src="images/calculator-app.png" alt="calculator app" /><p tabindex=0 class="image-label">Calculator App</p></a>
-            </div>
-            <div class="project-tile">
-                <a href="https://techmeg.github.io/stats-preview-card/" target="_blank"><img src="images/stats-preview-card.png" alt="calculator app" /><p tabindex=0 class="image-label">Stats Preview Card</p></a>
-            </div>
-            <div class="project-tile">
-                <a href="https://techmeg.github.io/menu-codepen-challenge/" target="_blank"><img src="images/menu.png" alt="menu" /><p tabindex=0 class="image-label">Menu</p></a>
-            </div>
+            {% for project in collections.featured | reverse %}
+                <div class="project-tile">
+                    <a href="{{ project.url }}" ><img src="{{ project.data.image }}" alt="{{ project.data.imageAlt}}" /><p tabindex=0 class="image-label">{{ project.data.title }}</p></a>
+                </div>
+            {% endfor %}
         </div>
         <div class="profile-link">
-            <a id="profile-link" target="_blank" href="https://github.com/techmeg">See more work</a>
+            <a id="profile-link" href="/projects">See more work</a>
         </div>
 
     </section>
-    {% include "footer.njk" %}
-</main>
+</div>
+
     

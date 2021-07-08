@@ -1,0 +1,12 @@
+    <div class="project-snippet"> 
+        <h2 class="project-snippet-title">{{ project.data.title}}</h2>
+        <figure class="project-snippet-image">
+            <a class="project-site-link" href="{{ project.url }}"><img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}"></a>
+            <figcaption class="caption"> {{ project.data.imageAlt }} </figcaption> 
+        </figure>
+        <div class="project-snippet-text">
+        {{ project.data.snippet }}
+        </div>
+        <a class="project-code-link" href="{{ project.data.codeLink }}">Link to Code</a>
+    </div>
+    <hr class="project-separator">

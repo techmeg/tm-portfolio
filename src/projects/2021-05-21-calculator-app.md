@@ -1,0 +1,11 @@
+---
+title: Calulator App
+tags: ['project', 'featured']
+description: Calculator App with themes
+image: /images/calculator-app.png
+imageAlt: Calculator App
+codeLink: github.com/techmeg/calculator-app
+siteLink: https://techmeg.github.io/fm-calculator-app/
+snippet: A Frontend Mentor project with Javascript logic and light/dark/alt theme styles.
+---
+This project was my first taste of using `prefers-color-scheme` and also my first major use of CSS variables. There were JavaScript challenges as well, managing the placement of commas and decimal points.
