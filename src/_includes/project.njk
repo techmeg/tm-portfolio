@@ -2,14 +2,16 @@
 layout: "base.njk"
 title: "title"
 ---
-<article class="project-article">
-    <h1>{{ title}}</h1>
-    <figure class="project-feature">
-        <a class="project-site-link" href="{{ siteLink }}"><img src="{{ image }}" alt="{{ imageAlt }}"></a>
-        <figcaption class="caption"> {{ imageAlt }} </figcaption> 
-    </figure>
-    <div class="project-text">
-    {{ content | safe }}
-        <button class="project-code-link"><a href="{{ codeLink }}">Link to Code</a></button>
+<article class="projects">
+    <h1 class="projects-heading">{{ title}}</h1>
+    <div class="project-container">
+        <figure class="project-feature">
+            <a class="project-site-link" href="{{ siteLink }}"><img src="{{ image }}" alt="{{ imageAlt }}"></a>
+            <figcaption class="caption"> {{ imageAlt }} </figcaption> 
+        </figure>
+        <div class="project-text">
+        {{ content | safe }}
+        </div>
+        <a class="project-code-link" href="{{ codeLink }}">Link to Code</a>
     </div>
 </article>
