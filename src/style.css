@@ -38,6 +38,8 @@ code {
 #navbar {
     background: var(--accent-nav);
     color: var(--accent-color);
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -45,21 +47,32 @@ code {
     box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
     z-index: 10;
 }
-.logo {
+/* .logo {
     font-size: clamp(2rem, 6vw, 2.8rem);
     font-weight: 800;
     font-style: italic;
     margin-left: 1rem;
     padding: 1rem 0 0;
     width: 100%;
-}
-.logo a:hover, .logo a:focus {
+} */
+/* .logo a:hover, .logo a:focus {
     color: var(--home-color);
+} */
+.logo {
+    margin-left: 1rem;
+    padding: 1rem 0;
+    width: 100px;
+    transition: transform .5s cubic-bezier(0.075, 0.82, 0.75, 1);
+}
+
+.logo:hover, .logo:focus {
+    transform: rotate(45deg);
 }
 
 .nav-menu {
     display: flex;
-    margin: .5rem;
+    flex-direction: column;
+    margin: 1rem;
 }
 
 ul {
@@ -116,6 +129,7 @@ ul {
         padding-bottom: 1rem;
     }
     .nav-menu {
+        flex-direction: row;
         margin-right: 1rem;
     }
     .nav-item a {
