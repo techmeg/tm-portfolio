@@ -1,7 +1,7 @@
 ---
 title: Room Homepage
 tags:
-  - project
+  - projectfeatured
 descripition: Landing page with an image/content slider
 image: /images/projects/desktop-screenshot.png
 imageAlt: Room landing page
