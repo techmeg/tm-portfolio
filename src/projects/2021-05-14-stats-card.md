@@ -2,7 +2,7 @@
 title: Stats Preview Card
 tags: project
 description: Frontend Mentor Stats Preview Card
-image: /images/stats-preview-card.png
+image: /images/projects/stats-preview-card.png
 imageAlt: Card Component Layout
 codeLink: https://github.com/techmeg/stats-preview-card
 siteLink: https://techmeg.github.io/stats-preview-card/

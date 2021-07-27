@@ -2,7 +2,7 @@
 title: Kitty Corner
 tags: project
 description: A one day test site
-image: /images/kitty-corner.jpg
+image: /images/projects/kitty-corner.jpg
 imageAlt: Landing page of site about cats
 codeLink: https://github.com/techmeg/kitty-corner
 siteLink: https://techmeg.github.io/kitty-corner/

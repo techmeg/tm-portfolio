@@ -2,7 +2,7 @@
 title: Launch Countdown Timer
 tags: ['project', 'featured']
 description: Countdown Timer home page
-image: /images/countdown-timer.png
+image: /images/projects/countdown-timer.png
 imageAlt: Countdown Timer home page
 codeLink: https://github.com/techmeg/fm-launch-countdown-timer
 siteLink: https://techmeg.github.io/fm-launch-countdown-timer/

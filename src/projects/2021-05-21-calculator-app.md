@@ -2,7 +2,7 @@
 title: Calulator App
 tags: ['project', 'featured']
 description: Calculator App with themes
-image: /images/calculator-app.png
+image: /images/projects/calculator-app.png
 imageAlt: Calculator App
 codeLink: https://github.com/techmeg/fm-calculator-app
 siteLink: https://techmeg.github.io/fm-calculator-app/
