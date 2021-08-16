@@ -1,12 +1,7 @@
 const links = document.querySelectorAll('.links');
 const navbar = document.getElementById('navbar');
-const navDim = navbar.getBoundingClientRect();
-console.log('nav', navDim)
-const work = document.getElementById('work')
-workDim = work.getBoundingClientRect();
-console.log('work', workDim)
+
 const navbarHeight = navbar.getBoundingClientRect().height;
-console.log(navbarHeight)
 
 links.forEach((link) => {
     link.addEventListener('click', (e) => {
