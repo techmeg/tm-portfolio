@@ -2,10 +2,10 @@
 title: Pic Some Photos
 tags:
   - featured
-  - projects
+  - project
 descripition: A Scrimba React project developed using create-react-app deployed in Netlify.
 image: /images/projects/pic-sum.png
-imageAlt: A Scrimba React project developed using create-react-app deployed in Netlify.
+imageAlt: Photo Selection App
 codeLink: https://github.com/techmeg/pick-some-photos
 siteLink: https://pick-some-photos.netlify.app/#/
 snippet: A photo selection site in React.
