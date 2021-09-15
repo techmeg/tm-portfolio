@@ -14,11 +14,13 @@ layout: "base.njk"
     </header>
 
     <main>
-<div class="projects">
-    <h1 class="projects-heading">Projects.</h1>
-    <div class="project-list">
-        {%- for project in collections.project | reverse -%}
-            {% include "projectSnippet.njk" %}
-        {%- endfor -%}
-    </div>
-</div>
+     <div >
+            <div class="projects">
+                <h1 class="projects-heading">Projects.</h1>
+                <div class="project-list">
+                    {%- for project in collections.project | reverse -%}
+                        {% include "projectSnippet.njk" %}
+                    {%- endfor -%}
+                </div>
+            </div>
+        </div>
