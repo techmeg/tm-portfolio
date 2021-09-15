@@ -2,6 +2,7 @@
 title: Pic Some Photos
 tags:
   - featured
+  - projects
 descripition: A Scrimba React project developed using create-react-app deployed in Netlify.
 image: /images/projects/pic-sum.png
 imageAlt: A Scrimba React project developed using create-react-app deployed in Netlify.
