@@ -5,11 +5,11 @@
 }
 
 :root {
-    --home-bg-color: #333;
+    --home-bg-color: rgb(175 164 164);
     --home-color: mediumorchid;
-    --accent-bg-color:  rgba(0, 255, 255, 0.666);
+    --accent-bg-color:  rgba(0, 255, 255, 0.838);
     --accent-nav: rgb(0, 255,255);
-    --projects-bg: rgb(187, 248, 248);
+    --projects-bg: rgb(197, 249, 239);
     --accent-color: rgb(14, 18, 136);
     --break-nav: 600px;
     --break-page: 768px;
@@ -33,13 +33,13 @@ code {
     color: #333;
 }
 
-.home, footer {
-    background: var(--home-bg-color);
+.home {
     color: var(--home-color);
 }
 
 #navbar {
     background: var(--accent-nav);
+    border-bottom: 2px solid rgb(0 0 0 / 40%);
     color: var(--accent-color);
     display: flex;
     justify-content: space-between;
@@ -47,7 +47,6 @@ code {
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
     z-index: 10;
 }
 /* .logo {
@@ -86,6 +85,7 @@ ul {
     display: list-item;
 }
 .nav-item a {
+    color: var(--accent-color);
     display: block;
     font-size: 1rem;
     font-weight: 700;
@@ -137,6 +137,7 @@ ul {
     }
     .nav-item a {
         font-size: 1.3rem;
+        margin-right: 4px;
         padding: .5rem 1rem;
     }
 }
@@ -145,6 +146,8 @@ section {
     scroll-margin-top: 4.125rem;
 }
 #welcome-section {
+    background-color: #e9e8ff;
+    border-bottom: 2px solid rgb(0 0 0 / 40%);
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -159,7 +162,6 @@ h1 {
     padding-top: 4rem;
 }
 .welcome-text {
-    color: magenta;
     font-size: 1.25rem;
     line-height: 1.6;
     max-width: 66ch;
@@ -183,7 +185,7 @@ h2 {
     padding: 3rem;
 }
 #work {
-    background: var(--accent-bg-color);
+    background: rgba(0, 255, 255, 0.46);
     color: var(--accent-color);
 }
 .tiles {
@@ -225,6 +227,11 @@ h2 {
     text-decoration: none;
     width: 200px;
 }
+footer {
+    background-color: var(--accent-nav);
+    border-top: 2px solid rgb(0 0 0 / 40%);
+    color: var(--accent-color);
+}
 
 .contact-icons {
     align-items: center;
@@ -233,7 +240,7 @@ h2 {
     justify-content: center;
 }
 #contact svg {
-    fill: var(--home-color);
+    fill: var(--accent-color);
     height: 50px;
     width: 50px;
 }
