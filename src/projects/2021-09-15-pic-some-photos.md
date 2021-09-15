@@ -4,7 +4,7 @@ tags:
   - featured
   - project
 descripition: A Scrimba React project developed using create-react-app deployed in Netlify.
-image: /images/projects/pic-sum.png
+image: /images/projects/pic-some.png
 imageAlt: Photo Selection App
 codeLink: https://github.com/techmeg/pick-some-photos
 siteLink: https://pick-some-photos.netlify.app/#/
