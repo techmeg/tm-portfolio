@@ -6,7 +6,7 @@ tags:
 descripition: what goes here?
 image: /images/projects/check-split.png
 imageAlt: Split the Check App
-codeLink: https://github.com/techmeg/check-split
+codeLink: https://github.com/techmeg/checksplit
 siteLink: https://check-split.netlify.app/#/
 snippet: An app to split restaurant checks
 skills: React
