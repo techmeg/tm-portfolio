@@ -1,7 +1,8 @@
 ---
 title: Split the Check
 tags:
-  - projectfeatured
+  - featured
+  - project
 descripition: what goes here?
 image: /images/projects/check-split.png
 imageAlt: Split the Check App
