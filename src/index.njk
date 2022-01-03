@@ -15,27 +15,27 @@ layout: "base.njk"
         </nav>
     </header>
     <main>
-<div class="home">
-    <section id="welcome-section">
-        <h1>Hi. Meg here.</h1>
-        <img class="cameo" src="images/meg-at-color-factory.png" alt="meg at Color Factory" />
-        <p class="welcome-text"> I am a career project manager who has turned to web development for fun and career expansion. I get a kick out of making the front end look pretty, although I'm interested in rooting around the back end too. My goal is to get as much coding in as possible, while using my organization skills to help the trains run on time.</p>
+        <div class="home">
+            <section id="welcome-section">
+                <h1>Hi. Meg here.</h1>
+                <img class="cameo" src="images/meg-at-color-factory.png" alt="meg at Color Factory" />
+                <p class="welcome-text"> I am a career changer who has turned to web development for fun and career expansion. I enjoy the challenge of matching execution to design on the front end and hope to further my understanding of performance and architecture by further study. My previous career in project management has honed my ability to zero in on bottlenecks and roadblocks to surface and address them.</p>
 
-    </section>
-    <section  id="work">
-        <h2>Here is a sampling of my work.</h2>
-        <div class="tiles">
-            {% for project in collections.featured | reverse %}
-                <div class="project-tile">
-                    <a href="{{ project.url }}" ><img src="{{ project.data.image }}" alt="{{ project.data.imageAlt}}" /><p tabindex=0 class="image-label">{{ project.data.title }}</p></a>
+            </section>
+            <section  id="work">
+                <h2>Here is a sampling of my work.</h2>
+                <div class="tiles">
+                    {% for project in collections.featured | reverse %}
+                        <div class="project-tile">
+                            <a href="{{ project.url }}" ><img src="{{ project.data.image }}" alt="{{ project.data.imageAlt}}" /><p tabindex=0 class="image-label">{{ project.data.title }}</p></a>
+                        </div>
+                    {% endfor %}
                 </div>
-            {% endfor %}
-        </div>
-        <div class="profile-link">
-            <a id="profile-link" href="/projects">See more work</a>
-        </div>
+                <div class="profile-link">
+                    <a id="profile-link" href="/projects">See more projects</a>
+                </div>
 
-    </section>
-</div>
+            </section>
+        </div>
 
     
