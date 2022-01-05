@@ -1,6 +1,6 @@
 ---
 title: Calulator App
-tags: ['project', 'featured']
+tags: ['project', 'featured', 'js']
 description: Calculator App with themes
 image: /images/projects/calculator-app.png
 imageAlt: Calculator App

@@ -3,7 +3,8 @@ title: Split the Check
 tags:
   - featured
   - project
-descripition: what goes here?
+  - react
+description: what goes here?
 image: /images/projects/check-split.png
 imageAlt: Split the Check App
 codeLink: https://github.com/techmeg/checksplit

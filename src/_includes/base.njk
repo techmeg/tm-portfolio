@@ -12,9 +12,11 @@
 <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 </head>
+    {% include "header.njk" %}
+
     {{ content | safe }}
     </main>
-            {% include "footer.njk" %}
+    {% include "footer.njk" %}
 
     <script>
     if (window.netlifyIdentity) {
@@ -28,5 +30,6 @@
     }
     </script>
     <script src="/scroll.js"></script>
+    <script src="/tabs.js"></script>
     </body>
 </html>

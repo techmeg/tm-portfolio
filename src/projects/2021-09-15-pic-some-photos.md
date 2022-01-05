@@ -3,6 +3,7 @@ title: Pic Some Photos
 tags:
   - featured
   - project
+  - react
 descripition: A Scrimba React project developed using create-react-app deployed in Netlify.
 image: /images/projects/pic-some.png
 imageAlt: Photo Selection App

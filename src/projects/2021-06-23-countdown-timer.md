@@ -1,6 +1,6 @@
 ---
-title: Launch Countdown Timer
-tags: ['project', 'featured']
+title: Countdown Timer
+tags: ['project', 'featured', 'js']
 description: Countdown Timer home page
 image: /images/projects/countdown-timer.png
 imageAlt: Countdown Timer home page

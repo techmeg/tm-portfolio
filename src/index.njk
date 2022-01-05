@@ -2,40 +2,75 @@
 layout: "base.njk"
 
 ---
-<body>
-    <header>
-        <nav id="navbar">
-            <div class="logo"><a href="/" ><img src="/images/techmeg.png" alt="techmeg logo"></a></div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a class="links" href="#welcome-section">About</a></li>
-                <li class="nav-item"><a class="links" href="#work">Work</a></li>
-                <li class="nav-item"><a class="links" href="#contact">Contact</a></li>
-                <li class="nav-item"><a  href="/projects">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+
+    <main class="flow"> 
         <div class="home">
-            <section id="welcome-section">
+            <section id="welcome-section" class="flow">
                 <h1>Hi. Meg here.</h1>
                 <img class="cameo" src="images/meg-at-color-factory.png" alt="meg at Color Factory" />
                 <p class="welcome-text"> I am a career changer who has turned to web development for fun and career expansion. I enjoy the challenge of matching execution to design on the front end and hope to further my understanding of performance and architecture by further study. My previous career in project management has honed my ability to zero in on bottlenecks and roadblocks to surface and address them.</p>
 
             </section>
-            <section  id="work">
-                <h2>Here is a sampling of my work.</h2>
-                <div class="tiles">
-                    {% for project in collections.featured | reverse %}
-                        <div class="project-tile">
-                            <a href="{{ project.url }}" ><img src="{{ project.data.image }}" alt="{{ project.data.imageAlt}}" /><p tabindex=0 class="image-label">{{ project.data.title }}</p></a>
-                        </div>
-                    {% endfor %}
-                </div>
-                <div class="profile-link">
-                    <a id="profile-link" href="/projects">See more projects</a>
-                </div>
+            <section id="projects">
+                <h2>SKILLS</h2>
+                <div class="panels flow">
+                    <div id="panel-1" class="panel ">
+                        <h3>HTML / CSS</h3>
+                        <p>Whether coding to a design spec or creating with my own (limited!) design sense, I have a good eye for detail, use the appropriate elements for good SEO and check for accessibility.</p>
+                        <ul>
+                        {% for project in collections.css | reverse %}
+                        <li>
+                            <a href="{{ project.url }}"><h4>{{ project.data.title }}</h4></a>
+                            <a class="no-border" href="{{ project.url }}"><img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}" ></a>
+                            <p>{{ project.data.snippet }}</p>
+                        </li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    <div id="panel-2" class="panel ">
+                        <h3>JavaScript</h3>
+                        <p></p>
+                        <ul>
+                        {% for project in collections.js | reverse %}
+                        <li>
+                            <a href="{{ project.url }}"><h4>{{ project.data.title }}</h4></a>
+                            <a class="no-border" href="{{ project.url }}"><img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}" ></a>
+                            <p>{{ project.data.snippet }}</p>
+                        </li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    <div id="panel-3" class="panel ">
+                        <h3>React</h3>
+                        <p>Here are examples of student projects made in conjunction with online coursework as well as an in-progress app I am developing for splitting restaurant checks.</p>
+                        <ul>
+                        {% for project in collections.react | reverse %}
+                        <li>
+                            <a href="{{ project.url }}"><h4>{{ project.data.title }}</h4></a>
+                            <a class="no-border" href="{{ project.url }}"><img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}" ></a>
+                            <p>{{ project.data.snippet }}</p>
+                        </li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    <div id="panel-4" class="panel">
+                        <h3>Frameworks</h3>
+                        <p>Curious to learn a little about various frameworks, I followed tutorial docs to build basic Gatsy and Next.js blog sites. An online tutorial of Jamstack architecture with 11ty hosted on Netlify, using the Netlify CMS was my first framework try-on and it seemed like a good fit for this portfolio site, so I promptly moved my site to this architecture for the ease of adding new projects.</p>
+                        <ul>
+                        {% for project in collections.framework | reverse %}
+                        <li>
+                            <a href="{{ project.url }}"><h4>{{ project.data.title }}</h4></a>
+                            <a class="no-border" href="{{ project.url }}"><img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}" ></a>
+                            <p>{{ project.data.snippet }}</p>
+                        </li>
+                        {% endfor %}
+                        </ul>                    </div>
 
+                </div>
             </section>
+
+            <span><a class="projects-link" href="/projects">See more projects </a>→</span>
+
         </div>
 
     

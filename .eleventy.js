@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy('./src/style.css');
     eleventyConfig.addPassthroughCopy('./src/scroll.js');
+    eleventyConfig.addPassthroughCopy('./src/tabs.js');
     eleventyConfig.addPassthroughCopy('./src/images');
     eleventyConfig.addPassthroughCopy('./src/admin');
 

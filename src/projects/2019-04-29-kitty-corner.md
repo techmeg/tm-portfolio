@@ -1,6 +1,6 @@
 ---
 title: Kitty Corner
-tags: project
+tags: ['project', 'css']
 descripition: A one day test site.
 image: /images/projects/kitty-corner.png
 imageAlt: Landing page of site about cats

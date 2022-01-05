@@ -1,6 +1,6 @@
 ---
 title: Stats Preview Card
-tags: project
+tags: ['project']
 description: Frontend Mentor Stats Preview Card
 image: /images/projects/stats-preview-card.png
 imageAlt: Card Component Layout
