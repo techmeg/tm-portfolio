@@ -4,7 +4,7 @@ tags:
   - featured
   - project
   - react
-descripition: A Scrimba React project developed using create-react-app deployed in Netlify.
+description: A site developed as part of a Scrimba course to teach the use of useContext(). 
 image: /images/projects/pic-some.png
 imageAlt: Photo Selection App
 codeLink: https://github.com/techmeg/pick-some-photos

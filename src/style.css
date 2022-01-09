@@ -409,14 +409,11 @@ footer h2 {
     font-weight: 700;
 }
 .project-code-link {
-    background:rgb(14, 18, 136);
-    border-radius: 8px;
-    color:rgb(0, 255,255);
+    color: var(--accent-color);
     font-weight: 700;
     height: 40px;
     justify-self: center;
-    padding: .5rem 1rem;
-    width: 132px;
+    width: max-content;
 }
 
 .project-separator {

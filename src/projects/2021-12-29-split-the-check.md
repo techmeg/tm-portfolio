@@ -4,7 +4,7 @@ tags:
   - featured
   - project
   - react
-description: what goes here?
+description: An app I made as I frequently would like to quickly split the restaurant check among friends. A work in progress...
 image: /images/projects/check-split.png
 imageAlt: Split the Check App
 codeLink: https://github.com/techmeg/checksplit
