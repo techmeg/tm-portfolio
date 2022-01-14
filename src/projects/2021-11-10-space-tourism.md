@@ -1,7 +1,7 @@
 ---
 title: Space Tourism,
 tags:  ['project', 'css']
-description: A Frontend Mentor multi-page practice project with a fancy tab panel focused on outer space.
+description: A multi-page practice site with a tab panel.
 image: /images/projects/space-tourism.png
 imageAlt: space tourism site
 codeLink: https://github.com/techmeg/FM-space-tourism

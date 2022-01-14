@@ -1,13 +1,15 @@
     <div class="project-snippet"> 
-        <h2 class="project-snippet-title">{{ project.data.title}}</h2>
+        {# <h2 class="project-snippet-title">{{ project.data.title}}</h2> #}
         <figure class="project-snippet-image">
-            <a class="project-site-link" href="{{ project.url }}"><img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}"></a>
             <figcaption class="caption"> {{ project.data.imageAlt }} </figcaption> 
+            <a class="project-page-link" href="{{ project.url }}"><img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}"></a>
         </figure>
-        <div class="project-snippet-text">
-        {{ project.data.description }}
+        <div class="project-snippet-info">
+            <p class="project-snippet-text">
+             {{ project.data.description }}
+            </p>
+            <p class="project-skills" ><span>Skills Used: </span>{{ project.data.skills}}</p>
+            <span><a class="project-code-link" href="{{ project.data.codeLink }}">Link to Code</a>→</span> 
         </div>
-        <p class="project-skills" ><span>Skills Used: </span>{{ project.data.skills}}</p>
-        <span><a class="project-code-link" href="{{ project.data.codeLink }}">Link to Code</a>→</span>
+
     </div>
-    <hr class="project-separator">

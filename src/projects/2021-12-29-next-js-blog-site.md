@@ -1,7 +1,7 @@
 ---
 title: Next.js Blog site,
 tags:  ['project', 'framework']
-description: A blog site I made following the apps tutorial.
+description: A blog site I made following the app tutorial.
 image: /images/projects/nextjs-site.png
 imageAlt: Simple blog using Next.js
 codeLink: https://github.com/techmeg/nextjs-blog

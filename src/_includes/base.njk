@@ -12,12 +12,14 @@
 <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 </head>
-    {% include "header.njk" %}
+<body>
+    <div class="container">
+        {% include "header.njk" %}
 
-    {{ content | safe }}
-    </main>
-    {% include "footer.njk" %}
-
+        {{ content | safe }}
+        </main>
+        {% include "footer.njk" %}
+    </div>
     <script>
     if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
@@ -29,7 +31,8 @@
         });
     }
     </script>
-    <script src="/scroll.js"></script>
     <script src="/tabs.js"></script>
+    <script src="/slideInfo.js"></script>
+
     </body>
 </html>

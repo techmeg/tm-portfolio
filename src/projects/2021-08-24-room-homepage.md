@@ -3,7 +3,7 @@ title: Room Homepage
 tags:
   - project
   - featured
-description: A Frontend Mentor practise landing page with slider challenge.
+description: A practise landing page with slider challenge.
 image: /images/projects/desktop-screenshot.png
 imageAlt: Room landing page
 codeLink: https://github.com/techmeg/room-homepage
