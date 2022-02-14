@@ -1,6 +1,6 @@
 ---
-title: Gatsby Blog site,
-tags:  ['project', 'framework']
+title: Gatsby Blog site
+tags: ["project", "framework"]
 description: A blog site made following the Gatsby tutorial docs.
 image: /images/projects/gatsby-test.png
 imageAlt: A blog site.
@@ -9,4 +9,6 @@ siteLink: https://testgatsbymain58036.gatsbyjs.io/
 snippet: A Gatsby blog site.
 skills: React, GraphLQ
 ---
-I built a basic blog following the docs, but didn't like the dev environment, so hopefully more Gatsby is not in my future.
+
+I built a basic blog following the docs, but didn't like the dev environment, so
+hopefully more Gatsby is not in my future.
