@@ -15,7 +15,7 @@ layout: "base.njk"
                 <h2>SKILLS</h2>
                 <div class="panels flow">
                     <div id="panel-1" class="panel ">
-                        <h3>HTML / CSS</h3>
+                        <h3 class="project_type">HTML / CSS</h3>
                         <p>Whether coding to a design spec or creating with my own (limited!) design sense, I have a good eye for detail, use the appropriate elements for good SEO and check for accessibility.</p>
                         <ul>
                         {% for project in collections.css | reverse %}
@@ -28,7 +28,7 @@ layout: "base.njk"
                         </ul>
                     </div>
                     <div id="panel-2" class="panel ">
-                        <h3>JavaScript</h3>
+                        <h3 class="project_type">JavaScript</h3>
                         <p></p>
                         <ul>
                         {% for project in collections.js | reverse %}
@@ -41,7 +41,7 @@ layout: "base.njk"
                         </ul>
                     </div>
                     <div id="panel-3" class="panel ">
-                        <h3>React</h3>
+                        <h3 class="project_type">React</h3>
                         <p>Here are examples of student projects made in conjunction with online coursework as well as an in-progress app I am developing for splitting restaurant checks.</p>
                         <ul>
                         {% for project in collections.react | reverse %}
@@ -54,7 +54,7 @@ layout: "base.njk"
                         </ul>
                     </div>
                     <div id="panel-4" class="panel">
-                        <h3>Frameworks</h3>
+                        <h3 class="project_type">Frameworks</h3>
                         <p>Curious to learn a little about various frameworks, I followed tutorial docs to build basic Gatsy and Next.js blog sites. An online tutorial of Jamstack architecture with 11ty hosted on Netlify, using the Netlify CMS was my first framework try-on and it seemed like a good fit for this portfolio site, so I promptly moved my site to this architecture for the ease of adding new projects.</p>
                         <ul>
                         {% for project in collections.framework | reverse %}
